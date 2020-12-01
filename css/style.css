@@ -1,0 +1,152 @@
+/* GENERAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #eef4ed;
+}
+
+a {
+  text-decoration: none;
+  color: #21333e;
+}
+
+li {
+  list-style: none;
+}
+
+/* Typhography */
+p {
+  font-size: 20px;
+}
+
+/* Utilities */
+.container {
+  position: relative;
+  width: 1150px;
+  margin: auto;
+}
+
+.flex-spb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-spb-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 30px;
+  color: #fff;
+  background: #038484;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+
+/* Layout */
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.header {
+  display: flex;
+  padding: 15px 0;
+  color: #fff;
+  background: #21333e;
+}
+
+.header-left i,
+.header-right span > i {
+  margin-right: 5px;
+}
+
+.header-right span,
+.header-right i,
+.main-menu ul li{
+  margin-left: 30px;
+}
+
+.main-menu {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+/* MAIN CONTENT */
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 83vh;
+}
+
+.hero-section .slider {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  height: 120px;
+  z-index: 1;
+}
+
+.hero-section .slider .circle {
+  width: 10px;
+  height: 35px;
+  border: 1px solid #038484;
+  border-radius: 10px;
+}
+
+.circle:hover {
+  background: #038484;
+}
+
+.hero-section .hero {
+  position: relative;
+  height: 100%;
+  background-image: url('../img/bg-parallax.png');
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+.hero-section .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28%;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 80px;
+  margin-bottom: 35px;
+}
+
+.title h1 span {
+  margin-left: 15px;
+  padding: 8px 10px;
+  color: #038484;
+  background: #d5e7e8;
+  border-radius: 5px;
+}
+
+.title > p {
+  margin-bottom: 45px;
+}
+
+.title > button {
+  margin: 0 10px;
+}
