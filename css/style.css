@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #21333e;
   background: #eef4ed;
 }
 
@@ -20,8 +21,28 @@ li {
 }
 
 /* Typhography */
+h1 {
+  font-size: 80px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 35px 0;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #00a6a6;
+}
+
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Utilities */
@@ -53,7 +74,6 @@ button {
   border: none;
   outline: none;
 }
-
 
 /* Layout */
 /* HEADER */
@@ -130,13 +150,7 @@ header {
   text-align: center;
 }
 
-.title h1 {
-  font-size: 80px;
-  margin-bottom: 35px;
-}
-
-.title h1 span {
-  margin-left: 15px;
+.title h1 span, h2 span {
   padding: 8px 10px;
   color: #038484;
   background: #d5e7e8;
@@ -147,6 +161,133 @@ header {
   margin-bottom: 45px;
 }
 
-.title > button {
+.hero-section .title > button {
   margin: 0 10px;
+}
+
+/* BUSINESS AREA */
+.business-area {
+  height: 100vh;
+}
+
+.business-area .container .title > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.business-area .container .title button {
+  width: 200px;
+  margin-left: 50px;
+}
+
+.business-area .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 65px;
+}
+
+.service-card {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  margin-bottom: 35px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.service-card .arrow {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+}
+
+.service-card .arrow i {
+  font-size: 26px;
+  margin-left: 8px;
+  color: #82c1c1;
+}
+
+.service-card i {
+  font-size: 45px;
+  color: #058283;
+}
+
+/* THE COMPANY */
+.company {
+  display: flex;
+  height: 80vh;
+  background: green;
+}
+
+.company > div {
+  width: 50%;
+  height: 100%;
+}
+
+.company .company-left {
+  position: relative;
+  background: #111117;
+}
+
+.company .company-right {
+  background-image: url('../img/about-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+.company .company-left > .about {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 60%;
+  height: 100%;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.company-left h2 > span {
+  color: #fff;
+  background: #0e272d;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.info > div {
+  width: 50%;
+  margin-bottom: 35px;
+  border-radius: 10px;
+}
+
+.info i {
+  color: #0b98a6;
+}
+
+.info .title {
+  width: 100%;
+}
+
+.info .title button:first-child {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  height: 100vh;
 }
