@@ -143,7 +143,7 @@ header {
 }
 
 .header-right i:hover {
-  transform: scale(1.5);
+  transform: scale(1.5s);
   color: #00a6a6;
   cursor: pointer;
 }
@@ -340,6 +340,11 @@ header {
 #about .about-left {
   position: relative;
   background: #111117;
+}
+
+#about .about-left .about > div > p {
+  width: 90%;
+  margin-bottom: 35px;
 }
 
 #about .about-right {
