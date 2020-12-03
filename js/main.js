@@ -3,7 +3,6 @@ const app = new Vue({
   el: '#app',
 
   data: {
-    indexPhoto: 0,
     mainMenu: [
               {
                 id: '#hero-section',
@@ -100,38 +99,28 @@ const app = new Vue({
     ],
 
   },
+  created () {
+    window.addEventListener('scroll', this.onScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.onScroll);
+  },
+  methods: {
 
-  // created() {
-  //   this.startLoop();
-  // },
-  //
-  // methods: {
-  //   nextPhoto: function() {
-  //     this.indexPhoto += 1;
-  //
-  //     if (this.indexPhoto === this.photos.length) {
-  //       this.indexPhoto = 0;
-  //     }
-  //   },
-  //   prevPhoto: function() {
-  //     this.indexPhoto -= 1;
-  //
-  //     if (this.indexPhoto < 0) {
-  //       this.indexPhoto = this.photos.length - 1;
-  //     }
-  //   },
-  //   circleNav: function(index) {
-  //
-  //     this.indexPhoto = index;
-  //   },
-  //   startLoop() {
-  //     this.intervalId = setInterval(() => {
-  //       this.nextPhoto();
-  //     }, 3000);
-  //   },
-  //   stopLoop() {
-  //     clearInterval(this.intervalId);
-  //   }
-  // }
+    onScroll (event) {
+      // add/remove class
 
+
+
+
+      // $(window).scroll(function() {
+      //   if ($(document).scrollTop() > 200) {
+      //     $('nav').addClass('transparent');
+      //   } else {
+      //     $('nav').removeClass('transparent');
+      //   }
+      // });
+
+    },
+  }
 });

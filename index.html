@@ -42,19 +42,22 @@
           </div>
         </div>
 
-        <div class="container">
-          <nav class="main-menu flex-spb">
-            <div class="logo">
-              <img src="./img/logo.png" alt="">
-            </div>
-            <ul class="flex-spb">
-              <li v-for="(element) in mainMenu">
-                <a :href="element.id">{{element.section}}</a>
-              </li>
-                <a href="#"><button type="button" name="button">Get in Touch</button></a>
-              </li>
-            </ul>
-          </nav>
+        <div class="header-bottom inverse">
+          <div class="container">
+            <nav class="main-menu flex-spb">
+              <div class="logo">
+                <img src="./img/logo.png" alt="">
+              </div>
+              <ul class="flex-spb">
+                <li v-for="(element, index) in mainMenu">
+                  <a
+                  :href="element.id">{{element.section}}
+                  </a>
+                </li>
+                <a href="#get-in-touch"><button type="button" name="button">Get in Touch</button></a>
+              </ul>
+            </nav>
+          </div>
         </div>
 
       </header>
@@ -162,6 +165,9 @@
         </section>
         <!-- About -->
         <section id="about">
+
+          <div class="separatore-1"></div>
+
           <div class="about-left">
             <div class="about flex-spb-col">
               <div>
@@ -196,6 +202,9 @@
             </div>
           </div>
           <div class="about-right"></div>
+
+          <div class="separatore-2"></div>
+
         </section>
         <!-- Projects -->
         <section id="projects">
