@@ -3,6 +3,7 @@ const app = new Vue({
   el: '#app',
 
   data: {
+    scrollPosition: 0,
     mainMenu: [
               {
                 id: '#hero-section',
@@ -97,30 +98,13 @@ const app = new Vue({
                 ],
               },
     ],
-
   },
-  created () {
-    window.addEventListener('scroll', this.onScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.onScroll);
+  mounted() {
+    window.addEventListener("scroll", this.handleTopBar);
   },
   methods: {
-
-    onScroll (event) {
-      // add/remove class
-
-
-
-
-      // $(window).scroll(function() {
-      //   if ($(document).scrollTop() > 200) {
-      //     $('nav').addClass('transparent');
-      //   } else {
-      //     $('nav').removeClass('transparent');
-      //   }
-      // });
-
-    },
-  }
+      handleTopBar() {
+        this.scrollPosition = window.scrollY
+      }
+  },
 });
