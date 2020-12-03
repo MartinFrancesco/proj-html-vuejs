@@ -14,6 +14,7 @@ body {
 a {
   text-decoration: none;
   color: #21333e;
+  outline: none;
   transition: 0.2s linear;
 }
 
@@ -124,9 +125,12 @@ header {
 }
 
 .header-right span,
-.header-right i,
-.main-menu ul li{
+.header-right i {
   margin-left: 30px;
+}
+
+.main-menu ul li {
+  margin-right: 30px;
 }
 
 .main-menu {
@@ -145,12 +149,12 @@ header {
 /* Main Content */
 
 /* HERO SECTION */
-.hero-section {
+#hero-section {
   position: relative;
   height: 85vh;
 }
 
-.hero-section .slider {
+#hero-section .slider {
   position: absolute;
   top: 50%;
   right: 40px;
@@ -158,7 +162,7 @@ header {
   z-index: 1;
 }
 
-.hero-section .slider .circle {
+#hero-section .slider .circle {
   width: 10px;
   height: 35px;
   border: 1px solid #038484;
@@ -169,7 +173,7 @@ header {
   background: #038484;
 }
 
-.hero-section .hero {
+#hero-section .hero {
   position: relative;
   height: 100%;
   background-image: url('../img/bg-parallax.png');
@@ -178,7 +182,7 @@ header {
   background-position: 50% 40%;
 }
 
-.hero-section .title {
+#hero-section .title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -198,7 +202,7 @@ header {
   margin-bottom: 45px;
 }
 
-.hero-section .title > button {
+#hero-section .title > button {
   margin: 0 10px;
 }
 

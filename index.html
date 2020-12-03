@@ -14,633 +14,467 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <!-- START VUE js APP -->
+    <div id="app">
 
-    <!-- HEDER -->
-    <header>
+      <!-- HEDER -->
+      <header>
 
-      <div class="header">
-        <div class="container flex-spb">
-          <div class="header-left">
-            <i class="fas fa-clock"></i>
-            Open Hours: Mon -Sat - 9:00 - 18:00
-          </div>
-          <div class="header-right">
-            <span>
-              <i class="fas fa-phone-alt"></i>
-              +1 (305) 1234-5678
-            </span>
-            <span>
-              <i class="fas fa-envelope"></i>
-              hello@example.com
-            </span>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <nav class="main-menu flex-spb">
-          <div class="logo">
-            <img src="./img/logo.png" alt="">
-          </div>
-          <ul class="flex-spb">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#results">Results</a>
-            </li>
-            <li>
-              <a href="#"><button type="button" name="button">Get in Touch</button></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-      <!-- Home -->
-      <section class="hero-section">
-        <div class="slider flex-spb-col">
-          <a href="#">
-            <div class="circle"></div>
-          </a>
-          <a href="#">
-            <div class="circle"></div>
-          </a>
-          <a href="#">
-            <div class="circle"></div>
-          </a>
-        </div>
-        <div class="hero">
-          <!-- TITLE -->
-          <div class="title">
-            <h1>Ready <span>Team</span></h1>
-            <p>
-              No matter what your company needs, we will be
-              <br>
-              ready to assist you in the best possible way.
-            </p>
-            <button type="button" name="button">Get in Touch</button>
-            <button class="btn-light" type="button" name="button">Read More</button>
-
-          </div>
-        </div>
-      </section>
-      <!-- Services -->
-      <section id="services">
-        <div class="container flex-spb">
-
-          <div class="center">
-            <h4>Our business area</h4>
-            <!-- TITLE -->
-            <div class="title">
-              <h2>Excellence in <span>Services</span></h2>
-              <div>
-                <p>We are leaders in providing consultancy srvices with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.
-                </p>
-                <button type="button" name="button">See All</button>
-              </div>
-
-              <!-- Cards -->
-              <div class="cards">
-                <div class="service-card flex-spb-col">
-                  <div class="arrow flex-spb">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                  <i class="fas fa-sitemap"></i>
-                  <h3>Audit & Assurance</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="service-card flex-spb-col">
-                  <div class="arrow flex-spb">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                  <i class="fas fa-briefcase"></i>
-                  <h3>Financial Advisory</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="service-card flex-spb-col">
-                  <div class="arrow flex-spb">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                  <i class="fas fa-chart-bar"></i>
-                  <h3>Analytics and M&A</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="service-card flex-spb-col">
-                  <div class="arrow flex-spb">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                  <i class="fas fa-plane"></i>
-                  <h3>Middle Marketing</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="service-card flex-spb-col">
-                  <div class="arrow flex-spb">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                  <i class="fas fa-globe"></i>
-                  <h3>Legal Consulting</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="service-card flex-spb-col">
-                  <div class="arrow flex-spb">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                  <i class="fas fa-box-open"></i>
-                  <h3>Regulatory Risk</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-              </div>
+        <div class="header">
+          <div class="container flex-spb">
+            <div class="header-left">
+              <i class="fas fa-clock"></i>
+              Open Hours: Mon -Sat - 9:00 - 18:00
+            </div>
+            <div class="header-right">
+              <span>
+                <i class="fas fa-phone-alt"></i>
+                +1 (305) 1234-5678
+              </span>
+              <span>
+                <i class="fas fa-envelope"></i>
+                hello@example.com
+              </span>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
             </div>
           </div>
         </div>
 
-      </section>
-      <!-- About -->
-      <section id="about">
-        <div class="about-left">
-          <div class="about flex-spb-col">
-            <div>
-              <h4>About the Network</h4>
-              <h2><span>The</span> Company</h2>
-              <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
+        <div class="container">
+          <nav class="main-menu flex-spb">
+            <div class="logo">
+              <img src="./img/logo.png" alt="">
             </div>
-
-            <div class="info">
-              <div>
-                <h3><i class="fas fa-award"></i> Tradition</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-              <div>
-                <h3><i class="fas fa-lock"></i> Security</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-              <div>
-                <h3><i class="far fa-edit"></i> Certificate</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-              <div>
-                <h3><i class="fas fa-graduation-cap"></i> Expertise</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-
-              <div class="title">
-                <button type="button" name="button">Get in Touch</button>
-                <button class="btn-dark" type="button" name="button">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-right"></div>
-      </section>
-      <!-- Projects -->
-      <section id="projects">
-        <div class="container flex-spb-col">
-          <!-- TITLE -->
-          <div class="title">
-            <h4>we do more for everyone</h4>
-            <h2>Actions & <span>Projects</span></h2>
-          </div>
-
-          <nav class="navbar-nav">
             <ul class="flex-spb">
-              <li>
-                <a href="#">
-                  All
-                </a>
+              <li v-for="(element) in mainMenu">
+                <a :href="element.id">{{element.section}}</a>
               </li>
-              <li>
-                <a href="#">
-                  Institutional
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Social
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Events
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Innovation
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Enviroment
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Technology
-                </a>
+                <a href="#"><button type="button" name="button">Get in Touch</button></a>
               </li>
             </ul>
           </nav>
-          <div class="projects">
-            <ul class="flex-spb">
-              <li>
-                <a href="#">
-                  <div class="project">
-                    <img src="./img/project-1.jpg" alt="">
-                    <div class="middle">
+        </div>
+
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <!-- Home -->
+        <section id="hero-section">
+          <div class="slider flex-spb-col">
+            <a href="#">
+              <div class="circle"></div>
+            </a>
+            <a href="#">
+              <div class="circle"></div>
+            </a>
+            <a href="#">
+              <div class="circle"></div>
+            </a>
+          </div>
+          <div class="hero">
+            <!-- TITLE -->
+            <div class="title">
+              <h1>Ready <span>Team</span></h1>
+              <p>
+                No matter what your company needs, we will be
+                <br>
+                ready to assist you in the best possible way.
+              </p>
+              <button type="button" name="button">Get in Touch</button>
+              <button class="btn-light" type="button" name="button">Read More</button>
+
+            </div>
+          </div>
+        </section>
+        <!-- Services -->
+        <section id="services">
+          <div class="container flex-spb">
+
+            <div class="center">
+              <h4>Our business area</h4>
+              <!-- TITLE -->
+              <div class="title">
+                <h2>Excellence in <span>Services</span></h2>
+                <div>
+                  <p>We are leaders in providing consultancy srvices with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.
+                  </p>
+                  <button type="button" name="button">See All</button>
+                </div>
+
+                <!-- Cards -->
+                <div class="cards">
+                  <div class="service-card flex-spb-col">
+                    <div class="arrow flex-spb">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Audit & Assurance</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="service-card flex-spb-col">
+                    <div class="arrow flex-spb">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Financial Advisory</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="service-card flex-spb-col">
+                    <div class="arrow flex-spb">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Analytics and M&A</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="service-card flex-spb-col">
+                    <div class="arrow flex-spb">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <i class="fas fa-plane"></i>
+                    <h3>Middle Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="service-card flex-spb-col">
+                    <div class="arrow flex-spb">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <i class="fas fa-globe"></i>
+                    <h3>Legal Consulting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="service-card flex-spb-col">
+                    <div class="arrow flex-spb">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <i class="fas fa-box-open"></i>
+                    <h3>Regulatory Risk</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- About -->
+        <section id="about">
+          <div class="about-left">
+            <div class="about flex-spb-col">
+              <div>
+                <h4>About the Network</h4>
+                <h2><span>The</span> Company</h2>
+                <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
+              </div>
+
+              <div class="info">
+                <div>
+                  <h3><i class="fas fa-award"></i> Tradition</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                  <h3><i class="fas fa-lock"></i> Security</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                  <h3><i class="far fa-edit"></i> Certificate</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                  <h3><i class="fas fa-graduation-cap"></i> Expertise</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="title">
+                  <button type="button" name="button">Get in Touch</button>
+                  <button class="btn-dark" type="button" name="button">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-right"></div>
+        </section>
+        <!-- Projects -->
+        <section id="projects">
+          <div class="container flex-spb-col">
+            <!-- TITLE -->
+            <div class="title">
+              <h4>we do more for everyone</h4>
+              <h2>Actions & <span>Projects</span></h2>
+            </div>
+
+            <nav class="navbar-nav">
+              <ul class="flex-spb">
+                <li v-for="(topic) in projects.topics">
+                  <a href="#">
+                    {{topic}}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="projects">
+              <ul class="flex-spb">
+                <li>
+                  <a href="#">
+                    <div class="project">
+                      <img src="./img/project-1.jpg" alt="">
+                      <div class="middle">
 
                         <i class="fas fa-arrow-right"></i>
                         <h3>Academic professional program in social media</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="project">
-                    <img src="./img/project-2.jpg" alt="">
-                    <div class="middle">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="project">
+                      <img src="./img/project-2.jpg" alt="">
+                      <div class="middle">
 
                         <i class="fas fa-arrow-right"></i>
                         <h3>President's speech at the annual meeting</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="project">
-                    <img src="./img/project-3.jpg" alt="">
-                    <div class="middle">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="project">
+                      <img src="./img/project-3.jpg" alt="">
+                      <div class="middle">
 
                         <i class="fas fa-arrow-right"></i>
                         <h3>International business trip in Shangai</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="project">
-                    <img src="./img/project-4.jpg" alt="">
-                    <div class="middle">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="project">
+                      <img src="./img/project-4.jpg" alt="">
+                      <div class="middle">
 
                         <i class="fas fa-arrow-right"></i>
                         <h3>Technology workshop with education theme</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="project">
-                    <img src="./img/project-5.jpg" alt="">
-                    <div class="middle">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="project">
+                      <img src="./img/project-5.jpg" alt="">
+                      <div class="middle">
 
                         <i class="fas fa-arrow-right"></i>
                         <h3>Donation of clothes and food to the partner NGO</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="project">
-                    <img src="./img/project-6.jpg" alt="">
-                    <div class="middle">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="project">
+                      <img src="./img/project-6.jpg" alt="">
+                      <div class="middle">
 
                         <i class="fas fa-arrow-right"></i>
                         <h3>Confraternization of the procurement team</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- Results -->
-      <section id="results">
-        <div class="numbers">
+        </section>
+        <!-- Results -->
+        <section id="results">
+          <div class="numbers">
+            <div class="container flex-spb-col">
+              <!-- TITLE -->
+              <div class="title">
+                <h4>What are we doing</h4>
+                <h2><span>Results</span> in Numbers</h2>
+              </div>
+
+              <div class="info-numbers">
+                <div v-for="(result) in results"
+                     class="title">
+                  <h2>{{result.number}}</h2>
+                  <h3>{{result.title}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="container flex-spb-col">
-            <!-- TITLE -->
-            <div class="title">
-              <h4>What are we doing</h4>
-              <h2><span>Results</span> in Numbers</h2>
-            </div>
-
-            <div class="info-numbers">
-              <div class="title">
-                <h2>128</h2>
-                <h3>Certifications</h3>
-              </div>
-              <div class="title">
-                <h2>230</h2>
-                <h3>Employees</h3>
-              </div>
-              <div class="title">
-                <h2>517</h2>
-                <h3>Customers</h3>
-              </div>
-              <div class="title">
-                <h2>94</h2>
-                <h3>Countries Served</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container flex-spb-col">
-          <div class="logos">
-            <ul class="flex-spb">
-              <li>
-                <a href="#">
-                  <img src="./img/logo-4.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/logo-5.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/logo-1.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/logo-2.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/logo-3.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/logo-4.png" alt="">
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </section>
-      <!-- Get in Touch -->
-      <section id="get-in-touch">
-        <div class="container">
-          <div class="contacts-left">
-            <!-- TITLE -->
-            <div class="title">
-              <h4>Send a Message</h4>
-              <h2>Get in <span>Touch</span></h2>
-              <p>We will respond to your message as soon as possible.</p>
-            </div>
-
-            <div class="form">
-              <input type="text" name="" value="" placeholder="Name">
-              <input type="text" name="" value="" placeholder="Email">
-              <input type="text" name="" value="" placeholder="Phone">
-              <input type="text" name="" value="" placeholder="More Info">
-              <textarea type="text" name="" value="" placeholder="Message"></textarea>
-            </div>
-            <button type="button" name="button">See All</button>
-          </div>
-
-          <div class="contacts-right">
-             <h3>Example Inc.</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-             <div>
-               <div class="circle">
-                 <i class="fas fa-phone-alt"></i>
-               </div>
-               <label for="">+1 (305) 1234-5678</label>
-             </div>
-
-             <div>
-               <div class="circle">
-                 <i class="fas fa-envelope"></i>
-               </div>
-               <label for="">hello@example.com</label>
-             </div>
-
-             <div>
-               <div class="circle">
-                 <i class="fas fa-map-marker-alt"></i>
-               </div>
-               <label for="">Main Avenue, 987</label>
-             </div>
-
-             <button class="btn-light" type="button" name="button">View Map</button>
-
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-      <section>
-        <div class="container flex-spb">
-          <div class="credits">
-
-            <div class="credit-box flex-spb-col">
-
-                 <div class="logo">
-                   <img src="./img/logo.png" alt="">
-                 </div>
-                 <p>A Functional HTML Template for Corporate & Business.</p>
-
-                 <div>
-                     <i class="fas fa-phone-alt"></i>
-                   <label for="">+1 (305) 1234-5678</label>
-                 </div>
-
-                 <div>
-                     <i class="fas fa-envelope"></i>
-                   <label for="">hello@example.com</label>
-                 </div>
-
-                 <div>
-                     <i class="fas fa-map-marker-alt"></i>
-                   <label for="">Main Avenue, 987</label>
-                 </div>
-
-                 <button class="btn-dark" type="button" name="button">Get in Touch</button>
-
-            </div>
-
-            <div class="credit-box">
-              <h3>About</h3>
-              <ul>
+            <div class="logos">
+              <ul class="flex-spb">
                 <li>
                   <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
+                    <img src="./img/logo-4.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
+                    <img src="./img/logo-5.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
+                    <img src="./img/logo-1.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
+                    <img src="./img/logo-2.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
+                    <img src="./img/logo-3.png" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-
-            <div class="credit-box">
-              <h3>About</h3>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-
-            <div class="credit-box">
-              <h3>About</h3>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-chevron-right"></i>
-                    The Company
+                    <img src="./img/logo-4.png" alt="">
                   </a>
                 </li>
               </ul>
+
+            </div>
+          </div>
+        </section>
+        <!-- Get in Touch -->
+        <section id="get-in-touch">
+          <div class="container">
+            <div class="contacts-left">
+              <!-- TITLE -->
+              <div class="title">
+                <h4>Send a Message</h4>
+                <h2>Get in <span>Touch</span></h2>
+                <p>We will respond to your message as soon as possible.</p>
+              </div>
+
+              <div class="form">
+                <input type="text" name="" value="" placeholder="Name">
+                <input type="text" name="" value="" placeholder="Email">
+                <input type="text" name="" value="" placeholder="Phone">
+                <input type="text" name="" value="" placeholder="More Info">
+                <textarea type="text" name="" value="" placeholder="Message"></textarea>
+              </div>
+              <button type="button" name="button">See All</button>
             </div>
 
+            <div class="contacts-right">
+              <h3>Example Inc.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+              <div>
+                <div class="circle">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <label for="">+1 (305) 1234-5678</label>
+              </div>
+
+              <div>
+                <div class="circle">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <label for="">hello@example.com</label>
+              </div>
+
+              <div>
+                <div class="circle">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <label for="">Main Avenue, 987</label>
+              </div>
+
+              <button class="btn-light" type="button" name="button">View Map</button>
+
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <section>
+          <div class="container flex-spb">
+            <div class="credits">
+
+              <div class="credit-box flex-spb-col">
+
+                <div class="logo">
+                  <img src="./img/logo.png" alt="">
+                </div>
+                <p>A Functional HTML Template for Corporate & Business.</p>
+
+                <div>
+                  <i class="fas fa-phone-alt"></i>
+                  <label for="">+1 (305) 1234-5678</label>
+                </div>
+
+                <div>
+                  <i class="fas fa-envelope"></i>
+                  <label for="">hello@example.com</label>
+                </div>
+
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <label for="">Main Avenue, 987</label>
+                </div>
+
+                <button class="btn-dark" type="button" name="button">Get in Touch</button>
+
+              </div>
+
+              <div v-for="(element) in footer" class="credit-box">
+                <h3>{{element.title}}</h3>
+                <ul>
+                  <li v-for="(link) in element.links">
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i>
+                      {{link}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <div class="footer">
+          <div class="container flex-spb">
+            <small>Enjoy the low price. We are tracking any intention of privacy.</small>
+            <small>&copy; 2020 NEXGEN is Proudly Powered by <span>Codings</span></small>
           </div>
         </div>
-      </section>
-      <div class="footer">
-        <div class="container flex-spb">
-          <small>Enjoy the low price. We are tracking any intention of privacy.</small>
-          <small>&copy; 2020 NEXGEN is Proudly Powered by <span>Codings</span></small>
-        </div>
-      </div>
-    </footer>
+      </footer>
+
+    </div>
 
   <!-- MAIN JS -->
-  <link rel="stylesheet" href="./js/style.css">
+  <script type="text/javascript" src="./js/main.js"></script>
 
   </body>
 </html>
